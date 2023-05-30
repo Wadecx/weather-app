@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.widget{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.widget .search{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.widget .weather .location h1, h5 {
+    margin: 0px;
+}
+.widget .search input[type='text'], input[type='submit']{
+    background-color: #181818;
+    color: white;
+    border: 1px solid aqua;
+
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.weather{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.weather .content h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;  
+}
+
+.weather .content img{
+    width: 100px;
+}
+
+.weather .content .stats {
+    
+}
+.weather .content .stats h4{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.search{
+    height: fit-content;
+}
+
+.blue{
+    color: aqua;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .weather{
+        padding: 70px;
+    }
+}
